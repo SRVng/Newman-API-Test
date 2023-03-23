@@ -8,6 +8,7 @@ jobs:
     name: "Run unit tests"
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
       - uses: denoland/setup-deno@v1
         with:
           deno-version: vx.x.x
