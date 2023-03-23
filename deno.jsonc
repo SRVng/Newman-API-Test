@@ -1,0 +1,8 @@
+{
+  "tasks": {
+    "dev": "deno run --watch main.ts",
+    "unit-test": "deno test src",
+    "e2e-test": "deno test --allow-net e2e"
+  },
+  "importMap": "./import_map.json"
+}
