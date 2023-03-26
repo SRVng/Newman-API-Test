@@ -28,5 +28,4 @@ jobs:
       - run: sed -i s/PROJECT_KEY/${{ secrets.PROJECT_KEY }}/g api_testing/newman.json
       - uses: matt-ball/newman-action@master
         with:
-          collection: postman_collection.json
-          environment: postman_environment.json
+          collection: api_testing/newman.json
