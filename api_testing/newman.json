@@ -13,7 +13,7 @@
           "raw": "https://PROJECT_KEY.deno.dev",
           "path": ["api", "health"],
           "protocol": "https",
-          "host": ["www", "PROJECT_KEY", "deno", "dev"]
+          "host": ["PROJECT_KEY", "deno", "dev"]
         }
       }
     }
