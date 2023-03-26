@@ -1,0 +1,21 @@
+{
+  "info": {
+    "name": "API Testing",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": ""
+  },
+  "item": [
+    {
+      "name": "Health",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "https://PROJECT_KEY.deno.dev",
+          "path": ["api", "health"],
+          "protocol": "https",
+          "host": ["www", "PROJECT_KEY", "deno", "dev"]
+        }
+      }
+    }
+  ]
+}

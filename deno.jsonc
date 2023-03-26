@@ -1,6 +1,6 @@
 {
   "tasks": {
-    "dev": "deno run --watch main.ts",
+    "dev": "deno run --watch --allow-net src/main.ts",
     "unit-test": "deno test src",
     "e2e-test": "deno test --allow-net e2e"
   },

@@ -23,5 +23,10 @@ jobs:
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: "newman"
+          project: ${{ secrets.PROJECT_KEY }}
           entrypoint: "./src/main.ts"
+      - run: sed -i s/PROJECT_KEY/${{ secrets.PROJECT_KEY }}/g api_testing/newman.json
+      - uses: matt-ball/newman-action@master
+        with:
+          collection: postman_collection.json
+          environment: postman_environment.json
